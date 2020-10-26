@@ -18,7 +18,7 @@ $(document).ready(function(){
                 },
                 subject: {
                     required: true,
-                    minlength: 4
+                    minlength: 3
                 },
                 
                 email: {
@@ -37,7 +37,7 @@ $(document).ready(function(){
                 },
                 subject: {
                     required: "come on, you have a subject, don't you?",
-                    minlength: "your subject must consist of at least 4 characters"
+                    minlength: "your subject must consist of at least 3 characters"
                 },
                 
        
