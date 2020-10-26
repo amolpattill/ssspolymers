@@ -56,10 +56,10 @@ $(document).ready(function(){
                     url:"https://docs.google.com/forms/u/5/d/e/1FAIpQLSepWk5JVO3TFI_w3yWPv1E3sxMz5SaSqaM2QyrXgTglDswnVg/formResponse",
 		    statusCode: {
 		      0: function () {
-			$(form).reset();
+			$("#contactForm").reset();
 		      },
 		      200: function () {
-			$(form).reset();
+			$("#contactForm").reset();
 		      },
 		    },
                     success: function() {
