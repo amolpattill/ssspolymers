@@ -58,7 +58,7 @@ $(document).ready(function(){
                 $(form).ajaxSubmit({
                     type:"POST",
                     data: $(form).serialize(),
-                    url:"contact_process.php",
+                    url:"https://docs.google.com/forms/u/5/d/e/1FAIpQLSepWk5JVO3TFI_w3yWPv1E3sxMz5SaSqaM2QyrXgTglDswnVg/formResponse",
                     success: function() {
                         $('#contactForm :input').attr('disabled', 'disabled');
                         $('#contactForm').fadeTo( "slow", 1, function() {
