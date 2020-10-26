@@ -54,6 +54,14 @@ $(document).ready(function(){
                     type:"POST",
                     data: $(form).serialize(),
                     url:"https://docs.google.com/forms/u/5/d/e/1FAIpQLSepWk5JVO3TFI_w3yWPv1E3sxMz5SaSqaM2QyrXgTglDswnVg/formResponse",
+		    statusCode: {
+		      0: function () {
+			$(form).reset();
+		      },
+		      200: function () {
+			$(form).reset();
+		      },
+		    },
                     success: function() {
                         $('#contactForm :input').attr('disabled', 'disabled');
                         $('#contactForm').fadeTo( "slow", 1, function() {
@@ -62,6 +70,7 @@ $(document).ready(function(){
                             $('#success').fadeIn()
                             $('.modal').modal('hide');
 		                	$('#success').modal('show');
+				
                         })
                     },
                     error: function() {
