@@ -53,7 +53,7 @@ $(document).ready(function(){
                 $(form).ajaxSubmit({
                     type:"POST",
                     data: $(form).serialize(),
-                    url:"https://docs.google.com/forms/u/5/d/e/1FAIpQLSepWk5JVO3TFI_w3yWPv1E3sxMz5SaSqaM2QyrXgTglDswnVg/formResponse",
+                    url:"https://docs.google.com/forms/d/e/1FAIpQLSepWk5JVO3TFI_w3yWPv1E3sxMz5SaSqaM2QyrXgTglDswnVg/viewform?usp=sf_link",
 		    statusCode: {
 		      0: function () {
 			$("#contactForm")[0].reset();
