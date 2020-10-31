@@ -53,7 +53,7 @@ $(document).ready(function(){
                 $(form).ajaxSubmit({
                     type:"POST",
                     data: $(form).serialize(),
-                    url:"https://forms.gle/PFweB2r9P36Gksp37",
+                    url:"https://forms.gle/ECsmLL1wnqEAg9B78",
 		    statusCode: {
 		      0: function () {
 			$("#contactForm")[0].reset();
